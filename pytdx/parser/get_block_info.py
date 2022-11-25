@@ -69,7 +69,7 @@ def get_and_parse_block_info(client, blockfile):
 if __name__ == '__main__':
     from pytdx.hq import TdxHq_API
     api = TdxHq_API()
-    with api.connect():
+    with api.connect(ip="120.76.152.87"):
         # ret = api.get_block_info("block_zs.dat", 0, 100)
         # print(len(ret))
         # ret = api.get_and_parse_block_info("block_fg.dat")
